@@ -11,8 +11,8 @@
   "author": "Bipul Mukherjee",
   "type": "commonjs",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
+  "start": "parcel src/index.html",
+  "build": "parcel build src/index.html"
   },
   "devDependencies": {
     "parcel": "^2.16.4"
