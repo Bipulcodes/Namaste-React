@@ -1,0 +1,23 @@
+{
+  "name": "namastelearning",
+  "version": "1.0.0",
+  "description": "This is React Learning from NamastedDev",
+  "keywords": [
+    "React",
+    "Learning",
+    "Development"
+  ],
+  "license": "ISC",
+  "author": "Bipul Mukherjee",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  }
+}
