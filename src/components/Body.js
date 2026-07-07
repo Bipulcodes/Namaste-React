@@ -19,12 +19,26 @@ const Body = () => {
 
 
         const json = await data.json();
-        const restaurantData = json?.data?.cards?.find((item)=> item?.card?.card?.id?.includes("restaurant_grid"))?.card?.card?.gridElements?.infoWithStyle?.restaurants
+        let restaurantData = json?.data?.cards?.find((item)=> item?.card?.card?.id?.includes("restaurant_grid"))?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+
+        let moreData = json?.data?.cards?.find((item)=> item?.card?.card?.id?.includes("top_brands_for_you"))?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+
+        console.log(moreData);
+        
+
+        
+        // const moreData = json?.data?.cards?.find(card => 
+        //     card?.card?.card?.gridElements?.infoWithStyle?.restaurants
+        // )?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+
+        if (moreData && moreData.length >= restaurantData.length) {
+            restaurantData = moreData;
+        }
         setListOfRestraunt(restaurantData);
         setfilteredList(restaurantData);
         //console.log(restaurantData);
         
-       console.log(listOfRestaurants);
+       //console.log(listOfRestaurants);
 //        const filerRestaurant = restaurantData?.filter(restaurant => 
 //   restaurant?.info?.name?.toLowerCase().includes(searchText.toLowerCase()));
 //   console.log(filerRestaurant);
