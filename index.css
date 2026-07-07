@@ -1,85 +1,103 @@
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border: 1px solid rgb(165, 112, 218);
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  border: 1px solid rgb(165, 112, 218);
 }
 .logo {
-    width: 200px;
-    padding: 30px;
+  width: 150px;
+  padding: 6px;
 }
-.search{
-    padding: 20px;
-}
-.nav-items>ul{
-    display: flex;
-    list-style-type: none;
-    font-size: 25px;
+.search {
+  padding: 20px;
 }
 
-.nav-items > ul > li {
-    padding: 10px;
+.nav-items {
+  width: 100%;
 }
-.res-container{
-    display: flex;
-    flex-wrap: wrap;
-    
+.nav-items ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
-.res-card{
-    width: 200px;
-    padding: 10px;
-    border: 1.5px solid rgb(178, 220, 135);
-    margin-right: 30px;
-    margin-bottom: 20px;
-    background-color: #a99797;
-    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), 
-              box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-} 
-
-.res-card img{
-    width: 190px;
-}
-
-.res-card:hover{
-    transform: translateY(-8px);
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.12);
+.nav-items ul Link,
+.nav-items ul a {
+  /* Link becomes <a> tag */
+  text-decoration: none;
+  color: rgb(170, 195, 141);
+  font-size: 18px;
+  padding: 12px 18px;
+  border-radius: 6px;
 }
 
-.res-logo{
-    width: 190px;
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.res-card {
+  width: 200px;
+  padding: 10px;
+  border: 1.5px solid rgb(178, 220, 135);
+  margin-right: 30px;
+  margin-bottom: 20px;
+  background-color: #a99797;
+  transition:
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.filter{
-    margin: 10px;
+.res-card img {
+  width: 190px;
 }
 
-.filter-btn{
-    padding: 10px;
-    cursor: pointer;
-    font-size: 30px;
+.res-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.12);
 }
 
-.shimmer-card{
-    width: 200px;
-    height: 400px;
-    padding: 10px;
-    border: 1.5px solid #ebffd7;
-    margin-right: 30px;
-    margin-bottom: 20px;
-    background-color: #ede8e8;
+.res-logo {
+  width: 190px;
 }
 
-.shimmer-container{
-    display: flex;
-    flex-wrap: wrap;
+.filter {
+  margin: 10px;
+}
+
+.filter-btn {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.shimmer-card {
+  width: 200px;
+  height: 400px;
+  padding: 10px;
+  border: 1.5px solid #ebffd7;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  background-color: #ede8e8;
+}
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .login {
-    margin: 10px;
-    padding: 10px 30px;
-    cursor: pointer;
+  margin: 10px;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: #a7d085;
+  border-radius: 10%;
 }
 
-.filter{
-    display: flex;
+.filter {
+  display: flex;
 }
