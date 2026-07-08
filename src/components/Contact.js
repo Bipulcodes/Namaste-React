@@ -1,9 +1,12 @@
 const Contact = () => {
-    return (
-    <div>
-        <h1>This is my contact Us Page</h1>
+  return (
+    <div className="contact-container">
+      <div className="contact-card">
+        <h1>This Page is created by Bipul</h1>
+        <h3>Mail: mailofbipul@gmail.com</h3>
+      </div>
     </div>
-    );
-}
+  );
+};
 
 export default Contact;

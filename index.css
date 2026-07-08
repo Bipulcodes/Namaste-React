@@ -37,23 +37,27 @@
 }
 
 .res-container {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .res-card {
-  width: 200px;
+  width: 290px;
   padding: 10px;
   border: 1.5px solid rgb(178, 220, 135);
-  margin-right: 30px;
+  margin: 0 20px;
   margin-bottom: 20px;
   background-color: #a99797;
+  border-radius: 20px;
   transition:
     transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
     box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .res-card img {
-  width: 190px;
+  width: 100%;
+  border-radius: 20px;
 }
 
 .res-card:hover {
@@ -100,4 +104,10 @@
 
 .filter {
   display: flex;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
