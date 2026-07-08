@@ -45,7 +45,8 @@
   width: 100%;
 }
 .res-card {
-  width: 290px;
+  width: 100%;
+  max-width: 300px;
   padding: 10px;
   border: 1.5px solid rgb(178, 220, 135);
   margin: 0 20px;
