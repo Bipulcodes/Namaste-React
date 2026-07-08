@@ -37,11 +37,12 @@
 }
 
 .res-container {
-  width: 100%;
-  height: 100%;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 10px;
+  width: 100%;
 }
 .res-card {
   width: 290px;
@@ -107,8 +108,8 @@
   display: flex;
 }
 
-.contact-container{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.contact-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
