@@ -13,9 +13,9 @@ const Body = () => {
     useEffect(()=>{fetchData();},[]);
 
     const fetchData = async () => {
-        //const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.56430&lng=88.36930&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.56430&lng=88.36930&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
 
-        const data = await fetch("/api/swiggy/dapi/restaurants/list/v5?lat=22.56430&lng=88.36930&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+        //const data = await fetch("/api/swiggy/dapi/restaurants/list/v5?lat=22.56430&lng=88.36930&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
 
 
         const json = await data.json();
@@ -64,7 +64,7 @@ const Body = () => {
                         //filter the restaurant     
                         const filteredList = listOfRestaurants.filter(res=>res?.info?.name?.toLowerCase()?.includes(searchText?.toLowerCase()))
                         setfilteredList(filteredList)
-                        console.log(filteredList);
+                        //console.log(filteredList);
                         
                     }}>Search</button>
                 </div>
